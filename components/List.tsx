@@ -1,6 +1,7 @@
 import React from 'react'
 import useDeleteTodo from '../Hooks/useDeleteTodo';
 import { TodoType } from './ListContainer';
+import CompletedBtn from './CompletedBtn';
 
 const List = ({id, content, completed} : TodoType) => {
 
@@ -13,7 +14,7 @@ const List = ({id, content, completed} : TodoType) => {
     <div className="font-mono flex w-[400px] justify-between items-center my-3">
         <h3 className="text-[20px]">{id}</h3>
         <h3>{content}</h3>
-        { completed ? <h3>✅</h3> : <h3>⬜</h3>}
+        <CompletedBtn id={id} completed={completed}/>
         <button 
           onClick={onDeleteBtn}
           className="rounded-lg bg-rose-200 p-2">Delete</button>
