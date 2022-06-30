@@ -1,0 +1,24 @@
+{
+    "todos": [
+      {
+        "id": 1,
+        "content": "Study Javascript",
+        "completed": true
+      },
+      {
+        "id": 2,
+        "content": "Study Typescript",
+        "completed": false
+      },
+      {
+        "id": 3,
+        "content": "Go to gym",
+        "completed": true
+      },
+      {
+        "id": 4,
+        "content": "Study Next.js",
+        "completed": true
+      }
+    ]
+  }
