@@ -3,7 +3,7 @@ import useGetTodos from '../Hooks/useGetTodos';
 import List from './List';
 
 export interface TodoType {
-    id : number;
+    id? : number;
     content : string;
     completed: boolean;
 }

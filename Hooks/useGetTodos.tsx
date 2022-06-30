@@ -9,7 +9,7 @@ const useGetTodos = () => {
     return data;
   }
 
-  return useQuery("posts", fetcher)
+  return useQuery("todos", fetcher)
 }
 
 export default useGetTodos;
