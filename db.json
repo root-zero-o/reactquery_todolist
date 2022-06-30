@@ -19,11 +19,6 @@
       "id": 4,
       "content": "Study Next.js",
       "completed": true
-    },
-    {
-      "content": "Make some noise",
-      "completed": false,
-      "id": 5
     }
   ]
 }
