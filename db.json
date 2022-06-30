@@ -8,12 +8,12 @@
     {
       "id": 2,
       "content": "Study Typescript",
-      "completed": false
+      "completed": true
     },
     {
       "id": 3,
       "content": "Go to gym",
-      "completed": true
+      "completed": false
     },
     {
       "id": 4,

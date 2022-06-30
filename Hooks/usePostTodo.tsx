@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from "react-query";
 import apis from "../api/main";
-import { TodoType } from "../components/ListContainer";
+import { TodoType } from "../components/ListContainer"; // import type
 
 const addTodo = async (data : TodoType) => {
     const addTodoDB = await apis.addTodo(data);
@@ -14,7 +14,7 @@ const usePostTodo = () => {
 
   return useMutation(addTodo, {
     onSuccess : () => {
-        queryClient.invalidateQueries("todos")
+        queryClient.invalidateQueries("todos")  // 바로 invalidate -> 데이터가 새로 불러와짐
         alert("작성 완료!")
     },
     onError : () => {

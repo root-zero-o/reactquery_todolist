@@ -9,7 +9,7 @@ const useUpdateCompleted = () => {
     const queryClient = useQueryClient();
     return useMutation(updateCompleted, {
         onSuccess: () => {
-            queryClient.invalidateQueries("todos");
+            queryClient.invalidateQueries("todos"); // 데이터가 invalidate 되어 새로 불러와짐
             alert("업데이트 완료!")
         },
         onError: () => {

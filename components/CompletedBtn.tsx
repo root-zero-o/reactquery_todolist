@@ -1,6 +1,8 @@
+// 누르면 체크가 표시되었다가, 해제되는 버튼 component
+
 import React from 'react'
-import { UpdateData } from '../api/main';
-import useUpdateCompleted from '../Hooks/useUpdateCompleted';
+import { UpdateData } from '../api/main'; // import type
+import useUpdateCompleted from '../Hooks/useUpdateCompleted'; // import hook
 
 const CompletedBtn = (updateData : UpdateData ) => {
 
@@ -8,7 +10,7 @@ const CompletedBtn = (updateData : UpdateData ) => {
     const onDeleteBtn = () => {
     mutate({
         id: updateData.id,
-        completed: !updateData.completed
+        completed: !updateData.completed  // 누를때마다 반대의 불리언 값으로
     });
   }
 
