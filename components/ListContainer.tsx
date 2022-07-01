@@ -1,12 +1,7 @@
 import React from 'react'
 import useGetTodos from '../Hooks/useGetTodos';
 import List from './List';
-
-export interface TodoType {
-    id? : number;
-    content : string;
-    completed: boolean;
-}
+import { TodoType } from '../types';
 
 export const ListContainer = () => {
 

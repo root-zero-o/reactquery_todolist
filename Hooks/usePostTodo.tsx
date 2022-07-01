@@ -1,7 +1,6 @@
 import { useMutation, useQueryClient } from "react-query";
 import apis from "../api/main";
-import { TodoType } from "../components/ListContainer"; // import type
-
+import { TodoType } from "../types";
 const addTodo = async (data : TodoType) => {
     const addTodoDB = await apis.addTodo(data);
     return addTodoDB;
